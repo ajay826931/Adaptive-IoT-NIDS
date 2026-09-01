@@ -1,0 +1,4 @@
+# Engineering & Research Changelog
+
+Verified project milestones and technical development notes.
+- [2026-09-01 11:05:40] docs(dataset): document test split stratification across rare attack types
