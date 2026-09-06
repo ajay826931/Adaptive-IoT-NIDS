@@ -7,3 +7,4 @@ Verified project milestones and technical development notes.
 - [2026-09-04 13:15:10] chore(config): adjust learning rate decay and early stopping patience
 - [2026-09-05 11:42:19] docs(eval): record cross-validation stability scores across 10 folds
 - [2026-09-05 14:02:44] refactor(model): encapsulate inference pipeline into reusable class
+- [2026-09-06 11:05:40] fix(pipeline): prevent division by zero in flow rate calculations
