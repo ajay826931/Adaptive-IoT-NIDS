@@ -11,3 +11,4 @@ Verified project milestones and technical development notes.
 - [2026-09-06 13:15:10] docs(benchmark): summarize edge device inference memory footprints
 - [2026-09-07 11:42:19] feat(metrics): add ROC-AUC calculation for individual attack classes
 - [2026-09-07 14:02:44] perf(inference): optimize matrix multiplication with vectorized operations
+- [2026-09-07 16:18:50] docs(eval): record cross-validation stability scores across 10 folds
