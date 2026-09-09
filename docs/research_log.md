@@ -16,3 +16,4 @@ Verified project milestones and technical development notes.
 - [2026-09-08 14:02:44] feat(reporting): add automated summary table generation in markdown
 - [2026-09-08 16:18:50] refactor(pipeline): streamline feature vector transformation
 - [2026-09-08 18:38:05] docs(notes): update research conclusions on DDoS mitigation delay
+- [2026-09-09 11:05:40] refactor(pipeline): streamline feature vector transformation
