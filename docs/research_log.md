@@ -21,3 +21,4 @@ Verified project milestones and technical development notes.
 - [2026-09-10 11:42:19] chore(logs): standardize error logging formats during batch evaluation
 - [2026-09-10 14:02:44] docs(catboost): log loss convergence across 500 boosting iterations
 - [2026-09-11 10:14:22] docs(notes): update research conclusions on DDoS mitigation delay
+- [2026-09-11 12:28:35] perf(cache): cache preprocessed feature matrices on disk
