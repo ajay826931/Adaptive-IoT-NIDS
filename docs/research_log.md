@@ -22,3 +22,4 @@ Verified project milestones and technical development notes.
 - [2026-09-10 14:02:44] docs(catboost): log loss convergence across 500 boosting iterations
 - [2026-09-11 10:14:22] docs(notes): update research conclusions on DDoS mitigation delay
 - [2026-09-11 12:28:35] perf(cache): cache preprocessed feature matrices on disk
+- [2026-09-13 10:14:22] feat(reporting): add automated summary table generation in markdown
