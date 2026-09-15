@@ -25,3 +25,4 @@ Verified project milestones and technical development notes.
 - [2026-09-13 10:14:22] feat(reporting): add automated summary table generation in markdown
 - [2026-09-13 12:28:35] refactor(pipeline): streamline feature vector transformation
 - [2026-09-14 11:05:40] feat(anomaly): add statistical thresholding for zero-day traffic spikes
+- [2026-09-15 10:14:22] refactor(features): remove zero-variance features from input matrix
