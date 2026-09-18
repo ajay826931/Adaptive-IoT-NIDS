@@ -30,3 +30,4 @@ Verified project milestones and technical development notes.
 - [2026-09-16 11:42:19] refactor(pipeline): streamline feature vector transformation
 - [2026-09-17 11:05:40] perf(cache): cache preprocessed feature matrices on disk
 - [2026-09-17 13:15:10] fix(preprocessing): handle missing values in raw PCAP flow records
+- [2026-09-18 11:42:19] perf(data): optimize batch tensor loading in DataLoader
