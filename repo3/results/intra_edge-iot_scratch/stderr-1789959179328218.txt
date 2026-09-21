@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "D:\ajay\jaynak sir\repo3\src\main.py", line 277, in <module>
+    main()
+  File "D:\ajay\jaynak sir\repo3\src\main.py", line 209, in main
+    appr.train(t, trn_loader[t], val_loader[t])
+  File "D:\ajay\jaynak sir\repo3\src\approach\incremental_learning.py", line 77, in train
+    trn_loader = self.train_loop(t, trn_loader, val_loader)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ajay\jaynak sir\repo3\src\approach\scratch.py", line 57, in train_loop
+    return super().train_loop(t, trn_loader, val_loader)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ajay\jaynak sir\repo3\src\approach\incremental_learning.py", line 109, in train_loop
+    self.train_epoch(t, trn_loader)
+  File "D:\ajay\jaynak sir\repo3\src\approach\scratch.py", line 75, in train_epoch
+    loss = self.criterion(t, outputs, targets)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ajay\jaynak sir\repo3\src\approach\scratch.py", line 106, in criterion
+    return torch.nn.functional.cross_entropy(torch.cat(outputs, dim=1), targets)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ajay\jaynak sir\repo3\venv\Lib\site-packages\torch\nn\functional.py", line 3561, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: expected target dtype to be Long or Byte, but got Int

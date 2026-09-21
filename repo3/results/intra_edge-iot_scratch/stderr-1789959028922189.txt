@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "D:\ajay\jaynak sir\repo3\src\main.py", line 277, in <module>
+    main()
+  File "D:\ajay\jaynak sir\repo3\src\main.py", line 167, in main
+    trn_loader, val_loader, tst_loader, taskcla = get_loaders(
+                                                  ^^^^^^^^^^^^
+  File "D:\ajay\jaynak sir\repo3\src\datasets\data_loader.py", line 24, in get_loaders
+    trn_dset, val_dset, tst_dset, curtaskcla, labels_dict, class_order = get_datasets(
+                                                                         ^^^^^^^^^^^^^
+  File "D:\ajay\jaynak sir\repo3\src\datasets\data_loader.py", line 97, in get_datasets
+    all_data, taskcla, class_indices, labels_dict, class_order = netdat.get_data(
+                                                                 ^^^^^^^^^^^^^^^^
+  File "D:\ajay\jaynak sir\repo3\src\datasets\networking_dataset.py", line 130, in get_data
+    labels=np.sort(np.unique(pd.read_parquet(full_path, columns=['LABEL'])['LABEL'].values))
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ajay\jaynak sir\repo3\venv\Lib\site-packages\pandas\io\parquet.py", line 667, in read_parquet
+    return impl.read(
+           ^^^^^^^^^^
+  File "D:\ajay\jaynak sir\repo3\venv\Lib\site-packages\pandas\io\parquet.py", line 267, in read
+    path_or_handle, handles, filesystem = _get_path_or_handle(
+                                          ^^^^^^^^^^^^^^^^^^^^
+  File "D:\ajay\jaynak sir\repo3\venv\Lib\site-packages\pandas\io\parquet.py", line 140, in _get_path_or_handle
+    handles = get_handle(
+              ^^^^^^^^^^^
+  File "D:\ajay\jaynak sir\repo3\venv\Lib\site-packages\pandas\io\common.py", line 882, in get_handle
+    handle = open(handle, ioargs.mode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '../data\\uniform_label\\edge-iiot_dwn10p.parquet'

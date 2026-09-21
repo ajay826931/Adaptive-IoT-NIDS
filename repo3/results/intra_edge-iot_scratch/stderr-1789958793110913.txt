@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "D:\ajay\jaynak sir\repo3\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3805, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7081, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\\_libs\\hashtable_class_helper.pxi", line 7089, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'LABEL'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\ajay\jaynak sir\repo3\src\main.py", line 277, in <module>
+    main()
+  File "D:\ajay\jaynak sir\repo3\src\main.py", line 167, in main
+    trn_loader, val_loader, tst_loader, taskcla = get_loaders(
+                                                  ^^^^^^^^^^^^
+  File "D:\ajay\jaynak sir\repo3\src\datasets\data_loader.py", line 24, in get_loaders
+    trn_dset, val_dset, tst_dset, curtaskcla, labels_dict, class_order = get_datasets(
+                                                                         ^^^^^^^^^^^^^
+  File "D:\ajay\jaynak sir\repo3\src\datasets\data_loader.py", line 97, in get_datasets
+    all_data, taskcla, class_indices, labels_dict, class_order = netdat.get_data(
+                                                                 ^^^^^^^^^^^^^^^^
+  File "D:\ajay\jaynak sir\repo3\src\datasets\networking_dataset.py", line 77, in get_data
+    le.fit(df['LABEL'])
+           ~~^^^^^^^^^
+  File "D:\ajay\jaynak sir\repo3\venv\Lib\site-packages\pandas\core\frame.py", line 4102, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ajay\jaynak sir\repo3\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    raise KeyError(key) from err
+KeyError: 'LABEL'
