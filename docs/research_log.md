@@ -33,3 +33,4 @@ Verified project milestones and technical development notes.
 - [2026-09-18 11:42:19] perf(data): optimize batch tensor loading in DataLoader
 - [2026-09-20 10:14:22] refactor(model): encapsulate inference pipeline into reusable class
 - [2026-09-20 12:28:35] fix(pipeline): prevent division by zero in flow rate calculations
+- [2026-09-21 11:42:19] feat(anomaly): add statistical thresholding for zero-day traffic spikes
