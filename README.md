@@ -15,6 +15,16 @@ An advanced, AI-driven Network Intrusion Detection System (NIDS) specifically ta
     *   Bias Correction (BiC)
 *   **Cross-Network Generalization:** Capable of training on a source network and effectively adapting to a completely new target network environment.
 
+## Evaluation Methodology
+
+The framework evaluates and adapts the model through several key stages:
+
+*   **Intra-dataset Evaluation:** This stage involves training a Network Intrusion Detection System (NIDS) on a specific source dataset. The NIDS is then evaluated using data from that same source to establish a performance baseline.
+*   **Cross-Evaluation:** This stage tests the model's ability to generalize by using the NIDS trained on the source dataset and evaluating its performance against a completely different target dataset.
+*   **Extended Network Evaluation:** This involves a process of training separate NIDS models on the source dataset and merging data from both source and target datasets. The merged data is used to train another NIDS to evaluate performance improvements with combined information.
+*   **Personalize NIDS with CIL (Continual Incremental Learning):** In this final stage, the original NIDS is adapted to a new target dataset through incremental training, resulting in a personalized "Incremental NIDS" that learns new patterns while retaining previous knowledge.
+*   **XAI (Explainable AI):** A separate module designed to analyze model behavior. It takes source and target classes, visualizes data relationships (using UMAP/heatmaps), identifies similarities, and creates attribution-based explanations (SHAP) for how predictions are made on the new target data.
+
 ## Repository Structure
 
 *   `src/`: Contains the core source code for training, evaluation, and the XAI pipeline.
