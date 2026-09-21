@@ -1,0 +1,70 @@
+PROJECT ANALYSIS: Incremental-NIDS (Network Intrusion Detection Systems for IoT)
+=============================================================================
+
+### 1. Yeh Project Kya Hai? (What is this project?)
+Yeh project Internet of Things (IoT) devices ke liye ek Network Intrusion Detection System (NIDS) hai. 
+Aasan shabdon mein, yeh ek AI-based security system hai jo IoT networks mein cyber attacks ko detect karta hai.
+Is project ki khaasiyat yeh hai ki yeh:
+- **Adaptable & Incremental:** Naye tarah ke network traffic aur attacks ko seekh sakta hai bina purane data ko bhule (Class/Domain Incremental Learning).
+- **Explainable (XAI):** Yeh AI sirf attack ko detect nahi karta, balki yeh bhi batata hai ki usne us traffic ko attack kyun mana (using SHAP aur UMAP).
+
+### 2. Workflow Graph (Mermaid Format)
+Aap is graph ko kisi bhi Markdown viewer ya Mermaid Live Editor mein dekh sakte hain.
+
+```mermaid
+graph TD
+    A[Data Inputs] --> B[Feature Extraction]
+    
+    subgraph 1. Data Preparation
+    B -->|Fields: PL, IAT, DIR, WIN| C(IoT Datasets: Edge-IIoT, IoT-NID, TON_IoT)
+    end
+    
+    subgraph 2. Model Training & Incremental Learning
+    C --> D{Learning Approach}
+    D -->|Scratch| E[Train from Scratch]
+    D -->|JointFT| F[Fine-Tuning]
+    D -->|JointFT-Mem| G[Fine-Tuning w/ Memory]
+    D -->|BiC| H[Bias Correction]
+    end
+    
+    subgraph 3. Evaluation & Metrics
+    E & F & G & H --> I[Test on Source Network]
+    E & F & G & H --> J[Test on Target Network]
+    I & J --> K[Compute Per-Class Metrics]
+    end
+    
+    subgraph 4. Explainable AI Pipeline XAI
+    K --> L[SHAP Analysis: Input Importance]
+    K --> M[UMAP: Assess Similarity]
+    K --> N[Compute Top-K Neighbors]
+    N --> O[Sample-based Explanations]
+    end
+```
+
+### 3. Pura Workflow Kaise Kaam Karta Hai? (Workflow Explanation)
+
+Is project ka workflow 4 main steps mein divided hai:
+
+**Step 1: Data Preparation & Configuration (Data aur Features set karna)**
+Sabse pehle, system IoT network ke traffic ka data leta hai. Yeh specifically packet ke 4 features (fields) par focus karta hai:
+- PL: Packet Length (Packet ka size)
+- IAT: Inter-Arrival-Time (Do packets ke aane ke beech ka time)
+- DIR: Direction (Packet ki disha)
+- WIN: TCP Window Size
+Yeh data alag-alag networks (jaise Edge-IIoT, IoT-NID, aur TON_IoT) se aata hai.
+
+**Step 2: Model Training (AI ko Train karna)**
+Yahan AI model ko train kiya jata hai. Isme do scenarios hain:
+- *Intra-dataset:* Ek hi network ke data par train aur test karna.
+- *Extended Scenario (Incremental Learning):* Ek network (Source) par train karke doosre naye network (Target) par adapt karna. Iske liye `scratch`, `finetuning (FT)`, `FT-Mem`, aur `BiC (Bias Correction)` jaisi techniques use hoti hain taaki model purana data na bhoole. (`main.py` isko handle karta hai).
+
+**Step 3: Metrics Evaluation (Performance check karna)**
+Training ke baad, model ko test kiya jata hai ki woh kitne acche se attacks pakad pa raha hai (F1 score, Accuracy). `compute_metrics.py` script run karke har ek attack type (class) ke liye detailed metrics generate kiye jate hain.
+
+**Step 4: Explainable AI Pipeline (XAI)**
+Kyunki Cyber Security mein AI ek "Black-box" nahi hona chahiye, yeh project XAI tools use karta hai:
+- *SHAP:* Yeh batata hai ki kis feature (jaise IAT ya PL) ki wajah se AI ne traffic ko attack samjha.
+- *UMAP:* Data ke andar similarities ko visualize karne ke liye.
+- *Sample-based Explanation:* Yeh script (`compute_neighbors.py`) naye attack samples ko purani memory se compare karti hai, takki pata chale ki AI ka decision kis purane attack se milta-julta hai.
+
+Yeh poora system Deep Learning ko IoT security mein na sirf apply karta hai, balki usko naye environments ke liye adaptable aur insaano ke samajh aane layak (explainable) banata hai.
