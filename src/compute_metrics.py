@@ -48,9 +48,10 @@ def main(df_filename, override=True):
         df = pd.concat((df,pd.read_parquet(df_fn)), ignore_index=True)
     df.reset_index(inplace=True, drop=True)
 
-    df_filename = '/'.join(df_filename[0].split('/')[:-1] + ['-'.join(
-        ['_'.join(df_filename[0].split('/')[-1].split('-')[0].split('_')[:4]),  # Removing the eventual episode index
-         df_filename[0].split('/')[-1].split('-')[-1]])])
+    fn_normalized = df_filename[0].replace('\\', '/')
+    df_filename = '/'.join(fn_normalized.split('/')[:-1] + ['-'.join(
+        ['_'.join(fn_normalized.split('/')[-1].split('-')[0].split('_')[:4]),  # Removing the eventual episode index
+         fn_normalized.split('/')[-1].split('-')[-1]])])
     
     metrics_list = [
         'f1_score',
@@ -102,13 +103,14 @@ if __name__ == '__main__':
     # experiments falling in the same exp_dir MUST have a different timestamp
     df_filenames_dict = dict()
     for df_filename in df_filenames:
-        key = (df_filename.split('/')[-3], df_filename.split('-')[-1])
+        fn_norm = df_filename.replace('\\', '/')
+        key = (fn_norm.split('/')[-3], fn_norm.split('-')[-1])
         df_filenames_dict.setdefault(key, []).append(df_filename)
 
     # Sort filenames by episode
     for key in df_filenames_dict:
         episodes = [
-            int(df_filename.split('/')[-1].split('-')[0].split('_')[-1]) for df_filename in df_filenames_dict[key]]
+            int(df_filename.replace('\\', '/').split('/')[-1].split('-')[0].split('_')[-1]) for df_filename in df_filenames_dict[key]]
         sorting_index = np.argsort(episodes)
         df_filenames_dict[key] = [df_filenames_dict[key][i] for i in sorting_index]
 
