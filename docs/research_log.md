@@ -37,3 +37,4 @@ Verified project milestones and technical development notes.
 - [2026-09-21 14:02:44] chore(config): adjust learning rate decay and early stopping patience
 - [2026-09-22 11:05:40] refactor(features): remove zero-variance features from input matrix
 - [2026-09-22 13:15:10] perf(data): optimize batch tensor loading in DataLoader
+- [2026-09-23 11:05:40] chore(logs): standardize error logging formats during batch evaluation
