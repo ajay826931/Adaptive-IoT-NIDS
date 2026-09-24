@@ -1,0 +1,50 @@
+WARNING: using pre-processed dataframe.
+Index(['SCALED_PL', 'SCALED_IAT', 'SCALED_DIR', 'SCALED_WIN', 'ENC_LABEL',
+       'IS_TRAIN'],
+      dtype='object')
+Class order:  [6, 5, 1, 0, 2, 4, 9, 7, 8, 3]
+max_task=2
+Lopez17CNN
+LLL_Net(
+  (model): Lopez17CNN(
+    (conv1): Conv2d(1, 32, kernel_size=(4, 2), stride=(1, 1))
+    (bn1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, bias=True, track_running_stats=True)
+    (conv2): Conv2d(32, 64, kernel_size=(4, 2), stride=(1, 1))
+    (bn2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, bias=True, track_running_stats=True)
+    (fc1): Linear(in_features=2560, out_features=200, bias=True)
+    (fc): Sequential()
+  )
+  (heads): ModuleList()
+)
+************************************************************************************************************
+Task  0
+************************************************************************************************************
+| Epoch   1, time=2.205s | Train: skip eval | Valid: time=0.195s loss=1.072, TAw acc=67.060% | *
+| Epoch   2, time=2.162s | Train: skip eval | Valid: time=0.186s loss=2.127, TAw acc=58.460% |
+
+| Epoch   3, time=2.179s | Train: skip eval | Valid: time=0.198s loss=0.597, TAw acc=79.196% | *
+| Train Time: pre_train=0.005s, train=10.353s, post_train=0.000s |
+Saving logits...
+Saving logits...
+------------------------------------------------------------------------------------------------------------
+>>> Test on task  0 : loss=0.575 | TAw acc=79.095%, forg=0.000%| TAg acc=79.095%, forg=0.000%, time= 0.775, Num_instances= 6013 <<<
+Save at ../results/intra_iot-nidd_scratch
+************************************************************************************************************
+TAw Acc
+	 79.1%   0.0% 	Avg.: 79.1% 
+	  0.0%   0.0% 	Avg.:  0.0% 
+************************************************************************************************************
+TAg Acc
+	 79.1%   0.0% 	Avg.: 79.1% 
+	  0.0%   0.0% 	Avg.:  0.0% 
+************************************************************************************************************
+TAw Forg
+	  0.0%   0.0% 
+	  0.0%   0.0% 	Avg.:  0.0% 
+************************************************************************************************************
+TAg Forg
+	  0.0%   0.0% 
+	  0.0%   0.0% 	Avg.:  0.0% 
+************************************************************************************************************
+[Elapsed time = 0.0 h]
+Done!

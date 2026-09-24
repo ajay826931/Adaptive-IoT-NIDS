@@ -35,9 +35,23 @@ The framework evaluates and adapts the model through several key stages:
 
 ## Quick Start
 
-### 1. Training the Model
+### 1. Easy Launcher (Recommended)
 
-Experiments and model training are executed via `main.py` located in the `src/` folder.
+Run the interactive control panel with a single command or double-click `run.bat`:
+
+```bash
+python run.py
+```
+Or use quick shortcut commands:
+* **Train model & evaluate:** `python run.py train [dataset_name] [epochs]`
+* **View results table:** `python run.py results`
+* **Generate sample data:** `python run.py sample`
+
+---
+
+### 2. Manual Execution (Advanced)
+
+Model training can also be run manually via `src/main.py`:
 
 #### Example: Training from Scratch
 
