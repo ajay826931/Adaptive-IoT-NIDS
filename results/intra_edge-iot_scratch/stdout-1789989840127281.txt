@@ -1,12 +1,8 @@
-INFO: 0.7 train_ratio is applied.
-[INFO] Applying padding!
-[INFO] Applying padding!
-[INFO] Applying padding!
-[INFO] Applying padding!
+WARNING: using pre-processed dataframe.
 Index(['SCALED_PL', 'SCALED_IAT', 'SCALED_DIR', 'SCALED_WIN', 'ENC_LABEL',
        'IS_TRAIN'],
       dtype='object')
-Class order:  [0, 1, 2]
+Class order:  [2, 12, 1, 6, 9, 10, 7, 11, 3, 5, 13, 0, 8, 4]
 max_task=2
 Lopez17CNN
 LLL_Net(
@@ -23,24 +19,24 @@ LLL_Net(
 ************************************************************************************************************
 Task  0
 ************************************************************************************************************
-| Epoch   1, time=0.246s | Train: skip eval | Valid: time=0.018s loss=1.100, TAw acc=32.075% | *
-| Epoch   2, time=0.168s | Train: skip eval | Valid: time=0.014s loss=1.101, TAw acc=33.962% |
-
-| Epoch   3, time=0.162s | Train: skip eval | Valid: time=0.015s loss=1.127, TAw acc=27.358% |
-
-| Train Time: pre_train=0.002s, train=3.261s, post_train=0.000s |
+| Epoch   1, time=2.409s | Train: skip eval | Valid: time=0.198s loss=0.403, TAw acc=83.065% | *
+| Epoch   2, time=2.347s | Train: skip eval | Valid: time=0.201s loss=0.390, TAw acc=82.634% | *
+| Epoch   3, time=2.258s | Train: skip eval | Valid: time=0.197s loss=0.379, TAw acc=79.677% | *
+| Epoch   4, time=2.345s | Train: skip eval | Valid: time=0.202s loss=0.353, TAw acc=86.613% | *
+| Epoch   5, time=2.379s | Train: skip eval | Valid: time=0.200s loss=0.295, TAw acc=88.925% | *
+| Train Time: pre_train=0.000s, train=14.727s, post_train=0.000s |
 Saving logits...
 Saving logits...
 ------------------------------------------------------------------------------------------------------------
->>> Test on task  0 : loss=1.097 | TAw acc=35.177%, forg=0.000%| TAg acc=35.177%, forg=0.000%, time= 0.062, Num_instances= 452 <<<
-Save at ../results/intra_dummy_scratch_scratch
+>>> Test on task  0 : loss=0.286 | TAw acc=89.012%, forg=0.000%| TAg acc=89.012%, forg=0.000%, time= 0.821, Num_instances= 7963 <<<
+Save at ../results/intra_edge-iot_scratch
 ************************************************************************************************************
 TAw Acc
-	 35.2%   0.0% 	Avg.: 35.2% 
+	 89.0%   0.0% 	Avg.: 89.0% 
 	  0.0%   0.0% 	Avg.:  0.0% 
 ************************************************************************************************************
 TAg Acc
-	 35.2%   0.0% 	Avg.: 35.2% 
+	 89.0%   0.0% 	Avg.: 89.0% 
 	  0.0%   0.0% 	Avg.:  0.0% 
 ************************************************************************************************************
 TAw Forg

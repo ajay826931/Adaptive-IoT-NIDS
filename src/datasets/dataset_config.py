@@ -15,9 +15,9 @@ dataset_config = {
         'path': join(_BASE_DATA_PATH, 'uniform_label',
                      'ton-iot_dwn10p.parquet'),
     },
-    'dummy': {
+    'sample_iot': {
         'path': join(_BASE_DATA_PATH, 'uniform_label',
-                     'dummy_dwn10p.parquet'),
+                     'sample_iot_dwn10p.parquet'),
     }
 }
 

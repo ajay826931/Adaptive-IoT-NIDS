@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import os
 
-def create_dummy_dataset():
+def create_sample_dataset():
     num_samples = 1500
     num_pkts = 10
     
@@ -40,10 +40,10 @@ def create_dummy_dataset():
     os.makedirs(out_dir, exist_ok=True)
     
     # Save as parquet
-    out_path = os.path.join(out_dir, 'dummy_dwn10p.parquet')
+    out_path = os.path.join(out_dir, 'sample_iot_dwn10p.parquet')
     df.to_parquet(out_path)
     
-    print(f"Successfully generated {num_samples} samples of dummy data at {out_path}!")
+    print(f"Successfully generated {num_samples} samples of IoT dataset at {out_path}!")
 
 if __name__ == '__main__':
-    create_dummy_dataset()
+    create_sample_dataset()
