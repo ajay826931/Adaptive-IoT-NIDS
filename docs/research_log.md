@@ -40,3 +40,4 @@ Verified project milestones and technical development notes.
 - [2026-09-23 11:05:40] chore(logs): standardize error logging formats during batch evaluation
 - [2026-09-24 11:05:40] feat(anomaly): add statistical thresholding for zero-day traffic spikes
 - [2026-09-25 10:14:22] refactor(features): remove zero-variance features from input matrix
+- [2026-09-25 12:28:35] perf(data): optimize batch tensor loading in DataLoader
