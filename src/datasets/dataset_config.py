@@ -18,6 +18,10 @@ dataset_config = {
     'sample_iot': {
         'path': join(_BASE_DATA_PATH, 'uniform_label',
                      'sample_iot_dwn10p.parquet'),
+    },
+    'ddos_http': {  # New custom HTTP DDoS dataset from PCAP
+        'path': join(_BASE_DATA_PATH, 'uniform_label',
+                     'ddos_http_dwn10p.parquet'),
     }
 }
 

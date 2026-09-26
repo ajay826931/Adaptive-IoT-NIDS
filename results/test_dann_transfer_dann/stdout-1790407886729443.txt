@@ -1,0 +1,75 @@
+WARNING: using pre-processed dataframe.
+Index(['SCALED_PL', 'SCALED_IAT', 'SCALED_DIR', 'SCALED_WIN', 'ENC_LABEL',
+       'IS_TRAIN'],
+      dtype='object')
+Class order:  [6, 5, 1, 0, 2, 4, 9, 7, 8, 3]
+WARNING: using pre-processed dataframe.
+Index(['SCALED_PL', 'SCALED_IAT', 'SCALED_DIR', 'SCALED_WIN', 'ENC_LABEL',
+       'IS_TRAIN'],
+      dtype='object')
+Class order:  [0, 1]
+[2 3]
+[(0, 2)]
+[[6, 5, 1, 0, 2, 4, 9, 7, 8, 3], [3, 2]] [(1, 0)]
+max_task=2
+STANNet
+LLL_Net(
+  (model): STANNet(
+    (proj): Linear(in_features=4, out_features=64, bias=True)
+    (conv1): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (bn1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, bias=True, track_running_stats=True)
+    (gru): GRU(64, 64, num_layers=2, batch_first=True, dropout=0.1, bidirectional=True)
+    (attn): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+    )
+    (norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True, bias=True)
+    (pool_weight): Linear(in_features=128, out_features=1, bias=True)
+    (fc1): Linear(in_features=256, out_features=200, bias=True)
+    (bn_out): BatchNorm1d(200, eps=1e-05, momentum=0.1, affine=True, bias=True, track_running_stats=True)
+    (dropout): Dropout(p=0.2, inplace=False)
+    (fc): Sequential()
+  )
+  (heads): ModuleList()
+)
+************************************************************************************************************
+Task  0
+************************************************************************************************************
+| Epoch   1, time=4.722s | Train: skip eval | Valid: time=0.195s loss=0.646, TAw acc=67.753% | *
+| Epoch   2, time=4.545s | Train: skip eval | Valid: time=0.183s loss=0.547, TAw acc=67.337% | *
+| Train Time: pre_train=0.000s, train=9.657s, post_train=0.000s |
+Saving logits...
+Saving logits...
+------------------------------------------------------------------------------------------------------------
+>>> Test on task  0 : loss=0.508 | TAw acc=69.433%, forg=0.000%| TAg acc=69.433%, forg=0.000%, time= 0.789, Num_instances= 6013 <<<
+Save at ../results/test_dann_transfer_dann
+************************************************************************************************************
+Task  1
+************************************************************************************************************
+| Epoch   1, time=2.034s | Train: skip eval | Valid: time=0.083s loss=0.000, TAw acc=100.000% | *
+| Epoch   2, time=1.989s | Train: skip eval | Valid: time=0.103s loss=0.000, TAw acc=100.000% | *
+| Train Time: pre_train=0.000s, train=4.218s, post_train=0.000s |
+Saving logits...
+Saving logits...
+------------------------------------------------------------------------------------------------------------
+>>> Test on task  0 : loss=2.827 | TAw acc=41.294%, forg=28.139%| TAg acc=41.294%, forg=28.139%, time= 0.788, Num_instances= 6013 <<<
+>>> Test on task  1 : loss=0.001 | TAw acc=99.863%, forg=0.000%| TAg acc=99.863%, forg=0.000%, time= 0.445, Num_instances= 2930 <<<
+Save at ../results/test_dann_transfer_dann
+************************************************************************************************************
+TAw Acc
+	 69.4%   0.0% 	Avg.: 69.4% 
+	 41.3%  99.9% 	Avg.: 70.6% 
+************************************************************************************************************
+TAg Acc
+	 69.4%   0.0% 	Avg.: 69.4% 
+	 41.3%  99.9% 	Avg.: 70.6% 
+************************************************************************************************************
+TAw Forg
+	  0.0%   0.0% 
+	 28.1%   0.0% 	Avg.: 28.1% 
+************************************************************************************************************
+TAg Forg
+	  0.0%   0.0% 
+	 28.1%   0.0% 	Avg.: 28.1% 
+************************************************************************************************************
+[Elapsed time = 0.0 h]
+Done!

@@ -1,4 +1,4 @@
-﻿import os
+import os
 import glob
 import sys
 import pandas as pd
@@ -17,7 +17,9 @@ CLASS_FILE_MAP = {
     'ton_iot': 'classes_ton-iot_dwn10p.txt',
     'ton-iot': 'classes_ton-iot_dwn10p.txt',
     'sample_iot': 'classes_sample_iot_dwn10p.txt',
-    'sample-iot': 'classes_sample_iot_dwn10p.txt'
+    'sample-iot': 'classes_sample_iot_dwn10p.txt',
+    'ddos_http': 'classes_ddos_http_dwn10p.txt',
+    'ddos-http': 'classes_ddos_http_dwn10p.txt'
 }
 
 def get_latest_exp_dir(base_dir=RESULTS_DIR):

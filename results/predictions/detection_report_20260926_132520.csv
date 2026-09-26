@@ -1,0 +1,51 @@
+Flow_ID,Status,Category,Detected_Attack,Confidence_%
+1,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,76.29
+2,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,65.81
+3,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,83.81
+4,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,84.47
+5,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,74.48
+6,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,89.29
+7,MALICIOUS,DoS / DDoS Attack (ICMP Ping Flood),dos-icmp,57.16
+8,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,44.57
+9,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,45.37
+10,MALICIOUS,DoS / DDoS Attack (ICMP Ping Flood),dos-icmp,74.62
+11,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,95.33
+12,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,46.65
+13,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,61.7
+14,MALICIOUS,DoS / DDoS Attack (ICMP Ping Flood),dos-icmp,50.52
+15,MALICIOUS,DoS / DDoS Attack (ICMP Ping Flood),dos-icmp,48.48
+16,MALICIOUS,DoS / DDoS Attack (ICMP Ping Flood),dos-icmp,88.6
+17,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,91.08
+18,MALICIOUS,DoS / DDoS Attack (ICMP Ping Flood),dos-icmp,50.49
+19,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,48.84
+20,MALICIOUS,DoS / DDoS Attack (ICMP Ping Flood),dos-icmp,95.98
+21,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,79.07
+22,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,84.08
+23,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,97.7
+24,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,56.53
+25,MALICIOUS,DoS / DDoS Attack (ICMP Ping Flood),dos-icmp,38.32
+26,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,49.73
+27,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,94.95
+28,MALICIOUS,DoS / DDoS Attack (ICMP Ping Flood),dos-icmp,65.47
+29,MALICIOUS,DoS / DDoS Attack (ICMP Ping Flood),dos-icmp,55.27
+30,MALICIOUS,DoS / DDoS Attack (ICMP Ping Flood),dos-icmp,69.46
+31,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,65.82
+32,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,60.99
+33,MALICIOUS,DoS / DDoS Attack (ICMP Ping Flood),dos-icmp,47.04
+34,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,74.13
+35,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,83.63
+36,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,92.76
+37,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,43.25
+38,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,96.41
+39,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,70.36
+40,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,60.28
+41,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,36.46
+42,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,36.82
+43,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,37.46
+44,MALICIOUS,DoS / DDoS Attack (ICMP Ping Flood),dos-icmp,91.36
+45,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,82.51
+46,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,85.86
+47,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,72.24
+48,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,65.49
+49,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,45.93
+50,MALICIOUS,Reconnaissance / Port Scanning,infog-scan-port,53.44

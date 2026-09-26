@@ -1,0 +1,101 @@
+Flow_ID,Status,Category,Detected_Attack,Confidence_%
+1,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,57.57
+2,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,94.3
+3,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,89.56
+4,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+5,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+6,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,90.88
+7,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,89.56
+8,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,90.62
+9,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,90.88
+10,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,89.4
+11,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,49.72
+12,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,90.98
+13,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,95.46
+14,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,83.13
+15,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,84.88
+16,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,90.88
+17,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,89.4
+18,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+19,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,89.41
+20,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,93.47
+21,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,90.2
+22,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,90.96
+23,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,90.58
+24,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,94.61
+25,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+26,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,90.99
+27,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,88.43
+28,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,89.41
+29,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+30,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,86.16
+31,MALICIOUS,Credential Abuse (HTTP Brute-Force),malwr-brutef-http,46.03
+32,MALICIOUS,Credential Abuse (HTTP Brute-Force),malwr-brutef-http,87.97
+33,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,94.31
+34,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,40.27
+35,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+36,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,89.41
+37,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,90.19
+38,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,90.19
+39,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,94.68
+40,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+41,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,95.46
+42,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+43,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+44,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+45,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,48.56
+46,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+47,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+48,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,90.58
+49,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,90.19
+50,MALICIOUS,Web Injection (HTTP Parameter/Header),inject-http,97.66
+51,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,94.68
+52,MALICIOUS,Credential Abuse (HTTP Brute-Force),malwr-brutef-http,35.55
+53,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,89.4
+54,MALICIOUS,Web Injection (HTTP Parameter/Header),inject-http,97.66
+55,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,95.46
+56,NORMAL,Benign (Safe Traffic),benign,63.89
+57,MALICIOUS,Web Injection (HTTP Parameter/Header),inject-http,97.66
+58,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+59,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,57.58
+60,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,95.42
+61,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,90.84
+62,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+63,MALICIOUS,DoS / DDoS Attack (ICMP Ping Flood),dos-icmp,79.88
+64,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,89.09
+65,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,95.43
+66,MALICIOUS,Credential Abuse (HTTP Brute-Force),malwr-brutef-http,87.97
+67,MALICIOUS,Credential Abuse (HTTP Brute-Force),malwr-brutef-http,28.92
+68,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+69,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,94.31
+70,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,94.3
+71,NORMAL,Benign (Safe Traffic),benign,63.89
+72,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,57.58
+73,MALICIOUS,Credential Abuse (HTTP Brute-Force),malwr-brutef-http,62.87
+74,MALICIOUS,Web Injection (HTTP Parameter/Header),inject-http,97.66
+75,MALICIOUS,Credential Abuse (HTTP Brute-Force),malwr-brutef-http,44.27
+76,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,90.95
+77,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,95.46
+78,MALICIOUS,DoS / DDoS Attack (ICMP Ping Flood),dos-icmp,74.61
+79,MALICIOUS,Web Injection (HTTP Parameter/Header),inject-http,97.66
+80,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,94.3
+81,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,89.41
+82,NORMAL,Benign (Safe Traffic),benign,63.89
+83,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,40.16
+84,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,57.58
+85,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,94.68
+86,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+87,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+88,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,90.89
+89,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,95.43
+90,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,94.67
+91,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+92,NORMAL,Benign (Safe Traffic),benign,63.89
+93,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+94,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,94.31
+95,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79
+96,NORMAL,Benign (Safe Traffic),benign,63.89
+97,MALICIOUS,Malware (TCP Backdoor / C2),malwr-backd-tcp,90.91
+98,MALICIOUS,DoS / DDoS Attack (HTTP Flood),dos-http,94.69
+99,MALICIOUS,DoS / DDoS Attack (ICMP Ping Flood),dos-icmp,71.75
+100,MALICIOUS,Ransomware / Encryptor Activity,malwr-ransomware,62.79

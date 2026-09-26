@@ -1,0 +1,59 @@
+WARNING: using pre-processed dataframe.
+Index(['SCALED_PL', 'SCALED_IAT', 'SCALED_DIR', 'SCALED_WIN', 'ENC_LABEL',
+       'IS_TRAIN'],
+      dtype='object')
+Class order:  [2, 12, 1, 6, 9, 10, 7, 11, 3, 5, 13, 0, 8, 4]
+max_task=2
+STANNet
+LLL_Net(
+  (model): STANNet(
+    (proj): Linear(in_features=4, out_features=64, bias=True)
+    (conv1): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (bn1): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, bias=True, track_running_stats=True)
+    (gru): GRU(64, 64, num_layers=2, batch_first=True, dropout=0.1, bidirectional=True)
+    (attn): MultiheadAttention(
+      (out_proj): NonDynamicallyQuantizableLinear(in_features=128, out_features=128, bias=True)
+    )
+    (norm): LayerNorm((128,), eps=1e-05, elementwise_affine=True, bias=True)
+    (pool_weight): Linear(in_features=128, out_features=1, bias=True)
+    (fc1): Linear(in_features=256, out_features=200, bias=True)
+    (bn_out): BatchNorm1d(200, eps=1e-05, momentum=0.1, affine=True, bias=True, track_running_stats=True)
+    (dropout): Dropout(p=0.2, inplace=False)
+    (fc): Sequential()
+  )
+  (heads): ModuleList()
+)
+************************************************************************************************************
+Task  0
+************************************************************************************************************
+| Epoch   1, time=5.877s | Train: skip eval | Valid: time=0.303s loss=0.346, TAw acc=83.817% | *
+| Epoch   2, time=5.962s | Train: skip eval | Valid: time=0.246s loss=0.246, TAw acc=87.419% | *
+| Epoch   3, time=5.866s | Train: skip eval | Valid: time=0.249s loss=0.225, TAw acc=89.570% | *
+| Epoch   4, time=5.917s | Train: skip eval | Valid: time=0.244s loss=0.246, TAw acc=89.194% |
+
+| Epoch   5, time=5.904s | Train: skip eval | Valid: time=0.239s loss=0.204, TAw acc=89.731% | *
+| Train Time: pre_train=0.004s, train=32.520s, post_train=0.000s |
+Saving logits...
+Saving logits...
+------------------------------------------------------------------------------------------------------------
+>>> Test on task  0 : loss=0.196 | TAw acc=89.753%, forg=0.000%| TAg acc=89.753%, forg=0.000%, time= 1.146, Num_instances= 7963 <<<
+Save at ../results/intra_edge_stannet_saved_scratch
+************************************************************************************************************
+TAw Acc
+	 89.8%   0.0% 	Avg.: 89.8% 
+	  0.0%   0.0% 	Avg.:  0.0% 
+************************************************************************************************************
+TAg Acc
+	 89.8%   0.0% 	Avg.: 89.8% 
+	  0.0%   0.0% 	Avg.:  0.0% 
+************************************************************************************************************
+TAw Forg
+	  0.0%   0.0% 
+	  0.0%   0.0% 	Avg.:  0.0% 
+************************************************************************************************************
+TAg Forg
+	  0.0%   0.0% 
+	  0.0%   0.0% 	Avg.:  0.0% 
+************************************************************************************************************
+[Elapsed time = 0.0 h]
+Done!
