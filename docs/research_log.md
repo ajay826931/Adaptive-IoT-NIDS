@@ -42,3 +42,4 @@ Verified project milestones and technical development notes.
 - [2026-09-25 10:14:22] refactor(features): remove zero-variance features from input matrix
 - [2026-09-25 12:28:35] perf(data): optimize batch tensor loading in DataLoader
 - [2026-09-26 10:14:22] chore(logs): standardize error logging formats during batch evaluation
+- [2026-09-26 12:28:35] docs(catboost): log loss convergence across 500 boosting iterations
