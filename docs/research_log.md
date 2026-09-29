@@ -46,3 +46,4 @@ Verified project milestones and technical development notes.
 - [2026-09-28 11:42:19] perf(data): optimize batch tensor loading in DataLoader
 - [2026-09-28 14:02:44] feat(reporting): add automated summary table generation in markdown
 - [2026-09-29 11:42:19] docs(catboost): log loss convergence across 500 boosting iterations
+- [2026-09-29 14:02:44] docs(dataset): document test split stratification across rare attack types
