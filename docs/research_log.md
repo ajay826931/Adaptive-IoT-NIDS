@@ -51,3 +51,4 @@ Verified project milestones and technical development notes.
 - [2026-09-29 18:38:05] perf(inference): optimize matrix multiplication with vectorized operations
 - [2026-09-30 11:05:40] feat(reporting): add automated summary table generation in markdown
 - [2026-09-30 13:15:10] refactor(pipeline): streamline feature vector transformation
+- [2026-10-01 11:42:19] feat(anomaly): add statistical thresholding for zero-day traffic spikes
