@@ -54,3 +54,4 @@ Verified project milestones and technical development notes.
 - [2026-10-01 11:42:19] feat(anomaly): add statistical thresholding for zero-day traffic spikes
 - [2026-10-02 11:42:19] docs(paper): draft methodology subsection on hybrid feature ranking
 - [2026-10-02 14:02:44] feat(eval): compute precision, recall, and F1 per packet protocol
+- [2026-10-02 16:18:50] chore(logs): standardize error logging formats during batch evaluation
