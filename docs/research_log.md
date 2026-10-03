@@ -56,3 +56,4 @@ Verified project milestones and technical development notes.
 - [2026-10-02 14:02:44] feat(eval): compute precision, recall, and F1 per packet protocol
 - [2026-10-02 16:18:50] chore(logs): standardize error logging formats during batch evaluation
 - [2026-10-03 11:42:19] fix(pipeline): prevent division by zero in flow rate calculations
+- [2026-10-03 14:02:44] docs(benchmark): summarize edge device inference memory footprints
