@@ -60,3 +60,4 @@ Verified project milestones and technical development notes.
 - [2026-10-05 11:42:19] docs(eval): record cross-validation stability scores across 10 folds
 - [2026-10-06 11:05:40] fix(pipeline): prevent division by zero in flow rate calculations
 - [2026-10-06 13:15:10] docs(benchmark): summarize edge device inference memory footprints
+- [2026-10-06 15:33:15] feat(anomaly): add statistical thresholding for zero-day traffic spikes
