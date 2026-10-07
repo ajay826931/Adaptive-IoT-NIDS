@@ -64,3 +64,4 @@ Verified project milestones and technical development notes.
 - [2026-10-07 11:05:40] perf(cache): cache preprocessed feature matrices on disk
 - [2026-10-07 13:15:10] fix(preprocessing): handle missing values in raw PCAP flow records
 - [2026-10-07 15:33:15] docs(paper): draft methodology subsection on hybrid feature ranking
+- [2026-10-07 17:52:12] feat(eval): compute precision, recall, and F1 per packet protocol
