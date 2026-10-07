@@ -62,3 +62,4 @@ Verified project milestones and technical development notes.
 - [2026-10-06 13:15:10] docs(benchmark): summarize edge device inference memory footprints
 - [2026-10-06 15:33:15] feat(anomaly): add statistical thresholding for zero-day traffic spikes
 - [2026-10-07 11:05:40] perf(cache): cache preprocessed feature matrices on disk
+- [2026-10-07 13:15:10] fix(preprocessing): handle missing values in raw PCAP flow records
