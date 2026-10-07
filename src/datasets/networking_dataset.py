@@ -55,17 +55,25 @@ def get_data(full_path, num_tasks, nc_first_task, nc_incr_tasks, validation, shu
     data = {}
     taskcla = []
 
-    full_path = full_path.replace('\\', '/')
-    path = os.path.join(*full_path.split('/')[:-1])
+    full_path = os.path.abspath(full_path)
+    path = os.path.dirname(full_path)
     if not os.path.exists(path):
-        full_path = '../' + full_path
-        path = os.path.join(*full_path.split('/')[:-1])
+        alt_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", "data", "uniform_label"))
+        if os.path.exists(alt_path):
+            path = alt_path
+            full_path = os.path.join(path, os.path.basename(full_path))
     
-    dataset_filename = full_path.split('/')[-1]
+    dataset_filename = os.path.basename(full_path)
     dataset_extension = dataset_filename.split('.')[-1]
 
     prep_df_path = os.path.join(path, dataset_filename.replace(
         '.%s' % dataset_extension, '_prep%d.%s' % (seed, dataset_extension)))
+    if not os.path.exists(prep_df_path):
+        canonical_prep = os.path.join(path, dataset_filename.replace(
+            '.%s' % dataset_extension, '_prep1.%s' % dataset_extension))
+        if os.path.exists(canonical_prep):
+            prep_df_path = canonical_prep
+
     all_fields = ['PL', 'IAT', 'DIR', 'WIN']
     
     df = None

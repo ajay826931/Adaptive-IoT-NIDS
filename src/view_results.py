@@ -25,7 +25,11 @@ CLASS_FILE_MAP = {
 def get_latest_exp_dir(base_dir=RESULTS_DIR):
     if not os.path.exists(base_dir):
         return None
-    dirs = [os.path.join(base_dir, d) for d in os.listdir(base_dir) if os.path.isdir(os.path.join(base_dir, d))]
+    dirs = [
+        os.path.join(base_dir, d)
+        for d in os.listdir(base_dir)
+        if os.path.isdir(os.path.join(base_dir, d)) and d.lower() != 'predictions'
+    ]
     if not dirs:
         return None
     dirs.sort(key=lambda x: os.path.getmtime(x), reverse=True)

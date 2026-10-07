@@ -1,0 +1,7 @@
+Source,Target,Shared_Classes_Count,Mean_Diagonal_Accuracy
+edge_iot,iot_nidd,6,0.00%
+edge_iot,ton_iot,9,0.86%
+ton_iot,edge_iot,9,0.00%
+ton_iot,iot_nidd,5,0.73%
+iot_nidd,ton_iot,5,36.36%
+iot_nidd,edge_iot,6,16.67%

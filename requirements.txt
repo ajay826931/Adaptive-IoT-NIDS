@@ -14,3 +14,5 @@ tqdm==4.66.1
 umap_learn==0.5.6
 shap==0.41.0
 ipykernel
+nvitop
+tensorboard

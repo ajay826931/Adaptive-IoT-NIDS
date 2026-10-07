@@ -1,6 +1,9 @@
+import os
 from os.path import join
 
-_BASE_DATA_PATH = "../data"
+_CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+_PROJECT_ROOT = os.path.abspath(os.path.join(_CURRENT_DIR, "..", ".."))
+_BASE_DATA_PATH = os.path.join(_PROJECT_ROOT, "data")
 
 dataset_config = {
     'iot_nidd': {  # class order

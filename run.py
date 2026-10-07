@@ -53,7 +53,8 @@ def train_model(dataset="edge_iot", epochs=10, exp_name=None, network="STANNet")
         "--save-models",
         "--network", network,
         "--approach", "scratch",
-        "--seed", "1"
+        "--seed", "1",
+        "--gpu", "0"
     ]
     code = run_command(cmd)
     if code == 0:
@@ -77,7 +78,8 @@ def transfer_learning(source="edge_iot", target="ton_iot", epochs=10, network="S
         "--save-models",
         "--network", network,
         "--approach", approach,
-        "--seed", "1"
+        "--seed", "1",
+        "--gpu", "0"
     ]
     code = run_command(cmd)
     if code == 0:
@@ -123,11 +125,17 @@ def interactive_menu():
         print(" [3] Compute Metrics for an Experiment")
         print(" [4] View Latest Experiment Results (Table)")
         print(" [5] Auto-Detect / Predict Attacks (Dataset or PCAP)")
-        print(" [6] Generate Sample IoT Dataset")
-        print(" [7] Exit")
+        print(" [6] Generate Academic Table 3 Benchmark (S = T across 3 datasets)")
+        print(" [7] Generate Academic Figure 4 Transferability Heatmaps (S -> T Matrix)")
+        print(" [8] Generate Academic Table 6 Continual Learning Benchmark (FT, FT-Mem, BiC)")
+        print(" [9] Run Hybrid Dual-Tree Ensemble Engine (XGBoost + CatBoost + Memory Buffer)")
+        print(" [10] Generate Academic Figure 3 (Biflow Distributions on Log Scale)")
+        print(" [11] Generate Academic Figure 7 (Feature Heatmaps & 2D Latent Manifold)")
+        print(" [12] Run Balanced Diagnostic Evaluation on Actual Dataset (Lag & Confusion Report)")
+        print(" [13] Exit")
         print("=" * 55)
         
-        choice = input("Select an option (1-7): ").strip()
+        choice = input("Select an option (1-13): ").strip()
         
         if choice == "1":
             print("\nAvailable datasets: edge_iot, ton_iot, iot_nidd, sample_iot, ddos_http")
@@ -166,13 +174,38 @@ def interactive_menu():
             predict_attacks(input_target=target, samples=int(num_s))
             
         elif choice == "6":
-            run_command([VENV_PYTHON, "generate_sample_data.py"])
+            runs_input = input("Enter number of runs (default: 3): ").strip() or "3"
+            epochs_input = input("Enter epochs per run (default: 3): ").strip() or "3"
+            run_command([VENV_PYTHON, "benchmark_table3.py", "--runs", runs_input, "--epochs", epochs_input])
             
         elif choice == "7":
+            epochs_input = input("Enter epochs per source dataset (default: 3): ").strip() or "3"
+            run_command([VENV_PYTHON, "cross_dataset_transfer.py", "--epochs", epochs_input])
+            
+        elif choice == "8":
+            epochs_input = input("Enter epochs per task (default: 3): ").strip() or "3"
+            run_command([VENV_PYTHON, "benchmark_table6.py", "--epochs", epochs_input])
+            
+        elif choice == "9":
+            src_in = input("Enter Source dataset (default: edge_iot): ").strip() or "edge_iot"
+            tgt_in = input("Enter Target dataset (default: ton_iot): ").strip() or "ton_iot"
+            run_command([VENV_PYTHON, "hybrid_ensemble.py", "--src", src_in, "--tgt", tgt_in])
+            
+        elif choice == "10":
+            run_command([VENV_PYTHON, "generate_figure3.py"])
+            
+        elif choice == "11":
+            run_command([VENV_PYTHON, "generate_figure7.py"])
+            
+        elif choice == "12":
+            samples_in = input("Enter max samples per class (default: 3000): ").strip() or "3000"
+            run_command([VENV_PYTHON, "test_actual_datasets.py", "--max-per-class", samples_in])
+            
+        elif choice == "13":
             print("Exiting...")
             break
         else:
-            print("[!] Invalid option. Please choose between 1 and 7.")
+            print("[!] Invalid option. Please choose between 1 and 13.")
 
 def main():
     if len(sys.argv) > 1:

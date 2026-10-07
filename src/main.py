@@ -74,6 +74,8 @@ def main(argv=None):
                         help='Weight decay (L2 penalty) (default=%(default)s)')
     parser.add_argument('--validation', default=0.1, type=float, required=False,
                         help='Validation fraction (default=%(default)s)')
+    parser.add_argument('--gpu', default=0, type=int, required=False,
+                        help='GPU ID to use (default=%(default)s)')
 
     # Args -- Incremental Learning Framework
     args, extra_args = parser.parse_known_args(argv)
@@ -98,8 +100,16 @@ def main(argv=None):
     print(extra_args)
     print('=' * 108)
 
-    # Args -- CUDA
-    device = 'cpu'
+    # Args -- CUDA / GPU Acceleration
+    if torch.cuda.is_available():
+        gpu_id = getattr(args, 'gpu', 0) if hasattr(args, 'gpu') else 0
+        device = f'cuda:{gpu_id}'
+        torch.cuda.set_device(gpu_id)
+        torch.backends.cudnn.benchmark = True
+        print(f'[+] CUDA Accelerated Execution: Using GPU {device} ({torch.cuda.get_device_name(gpu_id)})')
+    else:
+        device = 'cpu'
+        print('[-] CUDA not available. Running on CPU.')
 
     ####################################################################################################################
     

@@ -5,3 +5,6 @@ repo2/venv/
 repo3/venv/
 incremental-nids/venv/
 PROJECT_CHANGELOG.md
+data/Datasets/
+catboost_info/
+*.pcap
