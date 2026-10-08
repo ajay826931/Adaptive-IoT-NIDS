@@ -466,5 +466,7 @@ if __name__ == '__main__':
     parser.add_argument('--cpu', action='store_true', help='Force CPU instead of GPU')
     args = parser.parse_args()
 
-    use_gpu = not args.cpu
+    import torch
+    has_cuda = torch.cuda.is_available()
+    use_gpu = (not args.cpu) and has_cuda
     run_hybrid_ensemble_experiment(src_name=args.src, tgt_name=args.tgt, use_gpu=use_gpu)

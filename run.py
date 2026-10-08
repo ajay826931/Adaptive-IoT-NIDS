@@ -4,9 +4,16 @@ import subprocess
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 SRC_DIR = os.path.join(BASE_DIR, "src")
-VENV_PYTHON = os.path.join(BASE_DIR, "venv", "Scripts", "python.exe")
 
-if not os.path.exists(VENV_PYTHON):
+# Cross-platform venv python resolution (Windows vs macOS / Linux)
+VENV_PYTHON_WIN = os.path.join(BASE_DIR, "venv", "Scripts", "python.exe")
+VENV_PYTHON_UNIX = os.path.join(BASE_DIR, "venv", "bin", "python")
+
+if os.path.exists(VENV_PYTHON_WIN):
+    VENV_PYTHON = VENV_PYTHON_WIN
+elif os.path.exists(VENV_PYTHON_UNIX):
+    VENV_PYTHON = VENV_PYTHON_UNIX
+else:
     VENV_PYTHON = sys.executable
 
 def clean_dataset_name(name):

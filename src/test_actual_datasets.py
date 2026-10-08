@@ -23,7 +23,9 @@ SRC_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(SRC_DIR)
 sys.path.insert(0, SRC_DIR)
 
-DATASET_PATH = r"D:\ajay\jaynak sir\data\Datasets\Edge-IIoTset dataset\Selected dataset for ML and DL\ML-EdgeIIoT-dataset.csv"
+DEFAULT_DATASET_REL = os.path.join(PROJECT_ROOT, "data", "Datasets", "Edge-IIoTset dataset", "Selected dataset for ML and DL", "ML-EdgeIIoT-dataset.csv")
+DEFAULT_DATASET_WIN = r"D:\ajay\jaynak sir\data\Datasets\Edge-IIoTset dataset\Selected dataset for ML and DL\ML-EdgeIIoT-dataset.csv"
+DATASET_PATH = DEFAULT_DATASET_REL if os.path.exists(DEFAULT_DATASET_REL) else DEFAULT_DATASET_WIN
 
 # Canonical Attack Taxonomy (Section 2.2 in PROJECT_RULES.md)
 CANONICAL_LABEL_MAP = {
@@ -92,7 +94,7 @@ def load_and_preprocess_balanced_slice(dataset_path=DATASET_PATH, max_per_class=
 def run_diagnostic_evaluation(max_per_class=3000, use_gpu=True, seed=42):
     print("=" * 115)
     print("        STAGE 1: BALANCED DIAGNOSTIC EVALUATION & MODEL LAGGING ANALYSIS        ")
-    print(f"        Dataset Source: D:\\ajay\\jaynak sir\\data\\Datasets\\Edge-IIoTset dataset")
+    print(f"        Dataset Source: {DATASET_PATH}")
     print(f"        Hardware Engine: {'NVIDIA CUDA GPU' if use_gpu else 'CPU'}")
     print("=" * 115)
 
@@ -404,7 +406,7 @@ if __name__ == '__main__':
     parser.add_argument('--max-per-class', type=int, default=3000, help='Max balanced samples per class')
     parser.add_argument('--cpu', action='store_true', help='Force CPU instead of GPU')
     parser.add_argument('--seed', type=int, default=42, help='Random seed')
-    args = parser.parse_args()
-
-    use_gpu = not args.cpu
+    import torch
+    has_cuda = torch.cuda.is_available()
+    use_gpu = (not args.cpu) and has_cuda
     run_diagnostic_evaluation(max_per_class=args.max_per_class, use_gpu=use_gpu, seed=args.seed)
