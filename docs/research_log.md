@@ -69,3 +69,4 @@ Verified project milestones and technical development notes.
 - [2026-10-08 12:28:35] feat(eval): compute precision, recall, and F1 per packet protocol
 - [2026-10-08 14:48:30] chore(logs): standardize error logging formats during batch evaluation
 - [2026-10-08 17:05:25] docs(catboost): log loss convergence across 500 boosting iterations
+- [2026-10-09 11:42:19] docs(catboost): log loss convergence across 500 boosting iterations
