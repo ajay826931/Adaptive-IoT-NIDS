@@ -72,3 +72,4 @@ Verified project milestones and technical development notes.
 - [2026-10-09 11:42:19] docs(catboost): log loss convergence across 500 boosting iterations
 - [2026-10-09 14:02:44] docs(dataset): document test split stratification across rare attack types
 - [2026-10-09 16:18:50] feat(metrics): add ROC-AUC calculation for individual attack classes
+- [2026-10-10 11:42:19] chore(logs): standardize error logging formats during batch evaluation
