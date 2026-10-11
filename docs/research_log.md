@@ -78,3 +78,4 @@ Verified project milestones and technical development notes.
 - [2026-10-10 18:38:05] feat(metrics): add ROC-AUC calculation for individual attack classes
 - [2026-10-11 10:14:22] docs(notes): update research conclusions on DDoS mitigation delay
 - [2026-10-11 12:28:35] perf(cache): cache preprocessed feature matrices on disk
+- [2026-10-11 14:48:30] fix(preprocessing): handle missing values in raw PCAP flow records
