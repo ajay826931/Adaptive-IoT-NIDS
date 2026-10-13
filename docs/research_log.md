@@ -80,3 +80,4 @@ Verified project milestones and technical development notes.
 - [2026-10-11 12:28:35] perf(cache): cache preprocessed feature matrices on disk
 - [2026-10-11 14:48:30] fix(preprocessing): handle missing values in raw PCAP flow records
 - [2026-10-12 11:05:40] refactor(features): remove zero-variance features from input matrix
+- [2026-10-13 10:14:22] feat(reporting): add automated summary table generation in markdown
