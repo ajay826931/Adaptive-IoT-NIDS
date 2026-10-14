@@ -87,3 +87,4 @@ Verified project milestones and technical development notes.
 - [2026-10-13 19:22:40] fix(preprocessing): handle missing values in raw PCAP flow records
 - [2026-10-14 11:05:40] feat(anomaly): add statistical thresholding for zero-day traffic spikes
 - [2026-10-14 13:15:10] chore(config): adjust learning rate decay and early stopping patience
+- [2026-10-14 15:33:15] refactor(features): remove zero-variance features from input matrix
