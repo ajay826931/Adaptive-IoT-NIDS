@@ -91,3 +91,4 @@ Verified project milestones and technical development notes.
 - [2026-10-15 11:05:40] docs(paper): draft methodology subsection on hybrid feature ranking
 - [2026-10-15 13:15:10] feat(eval): compute precision, recall, and F1 per packet protocol
 - [2026-10-16 10:14:22] chore(logs): standardize error logging formats during batch evaluation
+- [2026-10-16 12:28:35] docs(catboost): log loss convergence across 500 boosting iterations
