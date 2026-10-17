@@ -93,3 +93,4 @@ Verified project milestones and technical development notes.
 - [2026-10-16 10:14:22] chore(logs): standardize error logging formats during batch evaluation
 - [2026-10-16 12:28:35] docs(catboost): log loss convergence across 500 boosting iterations
 - [2026-10-16 14:48:30] docs(dataset): document test split stratification across rare attack types
+- [2026-10-17 11:05:40] perf(cache): cache preprocessed feature matrices on disk
