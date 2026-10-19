@@ -97,3 +97,4 @@ Verified project milestones and technical development notes.
 - [2026-10-19 11:05:40] refactor(pipeline): streamline feature vector transformation
 - [2026-10-19 13:15:10] docs(notes): update research conclusions on DDoS mitigation delay
 - [2026-10-19 15:33:15] perf(cache): cache preprocessed feature matrices on disk
+- [2026-10-19 17:52:12] fix(preprocessing): handle missing values in raw PCAP flow records
