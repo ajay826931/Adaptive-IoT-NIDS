@@ -100,3 +100,4 @@ Verified project milestones and technical development notes.
 - [2026-10-19 17:52:12] fix(preprocessing): handle missing values in raw PCAP flow records
 - [2026-10-20 11:05:40] feat(reporting): add automated summary table generation in markdown
 - [2026-10-20 13:15:10] refactor(pipeline): streamline feature vector transformation
+- [2026-10-20 15:33:15] docs(notes): update research conclusions on DDoS mitigation delay
