@@ -104,3 +104,4 @@ Verified project milestones and technical development notes.
 - [2026-10-21 11:05:40] docs(dataset): document test split stratification across rare attack types
 - [2026-10-21 13:15:10] feat(metrics): add ROC-AUC calculation for individual attack classes
 - [2026-10-21 15:33:15] perf(inference): optimize matrix multiplication with vectorized operations
+- [2026-10-21 17:52:12] docs(eval): record cross-validation stability scores across 10 folds
