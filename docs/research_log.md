@@ -101,3 +101,4 @@ Verified project milestones and technical development notes.
 - [2026-10-20 11:05:40] feat(reporting): add automated summary table generation in markdown
 - [2026-10-20 13:15:10] refactor(pipeline): streamline feature vector transformation
 - [2026-10-20 15:33:15] docs(notes): update research conclusions on DDoS mitigation delay
+- [2026-10-21 11:05:40] docs(dataset): document test split stratification across rare attack types
