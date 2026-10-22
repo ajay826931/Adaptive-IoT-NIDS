@@ -106,3 +106,4 @@ Verified project milestones and technical development notes.
 - [2026-10-21 15:33:15] perf(inference): optimize matrix multiplication with vectorized operations
 - [2026-10-21 17:52:12] docs(eval): record cross-validation stability scores across 10 folds
 - [2026-10-22 11:05:40] refactor(features): remove zero-variance features from input matrix
+- [2026-10-22 13:15:10] perf(data): optimize batch tensor loading in DataLoader
