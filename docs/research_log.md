@@ -111,3 +111,4 @@ Verified project milestones and technical development notes.
 - [2026-10-22 17:52:12] refactor(pipeline): streamline feature vector transformation
 - [2026-10-23 10:14:22] feat(reporting): add automated summary table generation in markdown
 - [2026-10-23 12:28:35] refactor(pipeline): streamline feature vector transformation
+- [2026-10-24 11:42:19] perf(cache): cache preprocessed feature matrices on disk
