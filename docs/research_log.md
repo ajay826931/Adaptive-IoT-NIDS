@@ -115,3 +115,4 @@ Verified project milestones and technical development notes.
 - [2026-10-24 14:02:44] fix(preprocessing): handle missing values in raw PCAP flow records
 - [2026-10-25 11:42:19] docs(eval): record cross-validation stability scores across 10 folds
 - [2026-10-25 14:02:44] refactor(model): encapsulate inference pipeline into reusable class
+- [2026-10-25 16:18:50] fix(pipeline): prevent division by zero in flow rate calculations
