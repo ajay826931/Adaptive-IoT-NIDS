@@ -116,3 +116,4 @@ Verified project milestones and technical development notes.
 - [2026-10-25 11:42:19] docs(eval): record cross-validation stability scores across 10 folds
 - [2026-10-25 14:02:44] refactor(model): encapsulate inference pipeline into reusable class
 - [2026-10-25 16:18:50] fix(pipeline): prevent division by zero in flow rate calculations
+- [2026-10-26 11:42:19] refactor(pipeline): streamline feature vector transformation
