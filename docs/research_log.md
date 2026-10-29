@@ -120,3 +120,4 @@ Verified project milestones and technical development notes.
 - [2026-10-26 14:02:44] docs(notes): update research conclusions on DDoS mitigation delay
 - [2026-10-26 16:18:50] perf(cache): cache preprocessed feature matrices on disk
 - [2026-10-28 11:42:19] perf(data): optimize batch tensor loading in DataLoader
+- [2026-10-29 11:42:19] docs(catboost): log loss convergence across 500 boosting iterations
