@@ -122,3 +122,4 @@ Verified project milestones and technical development notes.
 - [2026-10-28 11:42:19] perf(data): optimize batch tensor loading in DataLoader
 - [2026-10-29 11:42:19] docs(catboost): log loss convergence across 500 boosting iterations
 - [2026-10-30 10:14:22] refactor(model): encapsulate inference pipeline into reusable class
+- [2026-10-30 12:28:35] fix(pipeline): prevent division by zero in flow rate calculations
