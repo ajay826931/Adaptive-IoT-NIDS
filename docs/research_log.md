@@ -127,3 +127,4 @@ Verified project milestones and technical development notes.
 - [2026-10-30 17:05:25] feat(anomaly): add statistical thresholding for zero-day traffic spikes
 - [2026-10-31 11:42:19] feat(anomaly): add statistical thresholding for zero-day traffic spikes
 - [2026-10-31 14:02:44] chore(config): adjust learning rate decay and early stopping patience
+- [2026-10-31 16:18:50] refactor(features): remove zero-variance features from input matrix
