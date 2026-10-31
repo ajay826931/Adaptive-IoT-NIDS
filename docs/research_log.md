@@ -125,3 +125,4 @@ Verified project milestones and technical development notes.
 - [2026-10-30 12:28:35] fix(pipeline): prevent division by zero in flow rate calculations
 - [2026-10-30 14:48:30] docs(benchmark): summarize edge device inference memory footprints
 - [2026-10-30 17:05:25] feat(anomaly): add statistical thresholding for zero-day traffic spikes
+- [2026-10-31 11:42:19] feat(anomaly): add statistical thresholding for zero-day traffic spikes
