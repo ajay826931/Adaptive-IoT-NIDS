@@ -129,3 +129,4 @@ Verified project milestones and technical development notes.
 - [2026-10-31 14:02:44] chore(config): adjust learning rate decay and early stopping patience
 - [2026-10-31 16:18:50] refactor(features): remove zero-variance features from input matrix
 - [2026-10-31 18:38:05] perf(data): optimize batch tensor loading in DataLoader
+- [2026-11-01 11:05:40] docs(dataset): document test split stratification across rare attack types
