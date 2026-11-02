@@ -132,3 +132,4 @@ Verified project milestones and technical development notes.
 - [2026-11-01 11:05:40] docs(dataset): document test split stratification across rare attack types
 - [2026-11-02 10:14:22] perf(inference): optimize matrix multiplication with vectorized operations
 - [2026-11-02 12:28:35] docs(eval): record cross-validation stability scores across 10 folds
+- [2026-11-02 14:48:30] refactor(model): encapsulate inference pipeline into reusable class
