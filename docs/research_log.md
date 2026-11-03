@@ -134,3 +134,4 @@ Verified project milestones and technical development notes.
 - [2026-11-02 12:28:35] docs(eval): record cross-validation stability scores across 10 folds
 - [2026-11-02 14:48:30] refactor(model): encapsulate inference pipeline into reusable class
 - [2026-11-03 11:05:40] chore(logs): standardize error logging formats during batch evaluation
+- [2026-11-03 13:15:10] docs(catboost): log loss convergence across 500 boosting iterations
