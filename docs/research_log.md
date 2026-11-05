@@ -138,3 +138,4 @@ Verified project milestones and technical development notes.
 - [2026-11-03 15:33:15] docs(dataset): document test split stratification across rare attack types
 - [2026-11-04 11:42:19] perf(cache): cache preprocessed feature matrices on disk
 - [2026-11-05 10:14:22] refactor(features): remove zero-variance features from input matrix
+- [2026-11-05 12:28:35] perf(data): optimize batch tensor loading in DataLoader
