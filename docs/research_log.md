@@ -137,3 +137,4 @@ Verified project milestones and technical development notes.
 - [2026-11-03 13:15:10] docs(catboost): log loss convergence across 500 boosting iterations
 - [2026-11-03 15:33:15] docs(dataset): document test split stratification across rare attack types
 - [2026-11-04 11:42:19] perf(cache): cache preprocessed feature matrices on disk
+- [2026-11-05 10:14:22] refactor(features): remove zero-variance features from input matrix
