@@ -140,3 +140,4 @@ Verified project milestones and technical development notes.
 - [2026-11-05 10:14:22] refactor(features): remove zero-variance features from input matrix
 - [2026-11-05 12:28:35] perf(data): optimize batch tensor loading in DataLoader
 - [2026-11-06 11:42:19] refactor(pipeline): streamline feature vector transformation
+- [2026-11-10 11:42:19] chore(logs): standardize error logging formats during batch evaluation
