@@ -146,3 +146,4 @@ Verified project milestones and technical development notes.
 - [2026-11-12 12:28:35] docs(eval): record cross-validation stability scores across 10 folds
 - [2026-11-13 11:42:19] fix(pipeline): prevent division by zero in flow rate calculations
 - [2026-11-14 11:05:40] feat(anomaly): add statistical thresholding for zero-day traffic spikes
+- [2026-11-14 13:15:10] chore(config): adjust learning rate decay and early stopping patience
