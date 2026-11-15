@@ -149,3 +149,4 @@ Verified project milestones and technical development notes.
 - [2026-11-14 13:15:10] chore(config): adjust learning rate decay and early stopping patience
 - [2026-11-14 15:33:15] refactor(features): remove zero-variance features from input matrix
 - [2026-11-14 17:52:12] perf(data): optimize batch tensor loading in DataLoader
+- [2026-11-15 11:05:40] docs(paper): draft methodology subsection on hybrid feature ranking
