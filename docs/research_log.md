@@ -151,3 +151,4 @@ Verified project milestones and technical development notes.
 - [2026-11-14 17:52:12] perf(data): optimize batch tensor loading in DataLoader
 - [2026-11-15 11:05:40] docs(paper): draft methodology subsection on hybrid feature ranking
 - [2026-11-16 11:05:40] fix(pipeline): prevent division by zero in flow rate calculations
+- [2026-11-16 13:15:10] docs(benchmark): summarize edge device inference memory footprints
