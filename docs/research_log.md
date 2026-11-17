@@ -154,3 +154,4 @@ Verified project milestones and technical development notes.
 - [2026-11-16 13:15:10] docs(benchmark): summarize edge device inference memory footprints
 - [2026-11-17 10:14:22] feat(anomaly): add statistical thresholding for zero-day traffic spikes
 - [2026-11-17 12:28:35] chore(config): adjust learning rate decay and early stopping patience
+- [2026-11-17 14:48:30] refactor(features): remove zero-variance features from input matrix
