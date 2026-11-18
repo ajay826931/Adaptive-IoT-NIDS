@@ -157,3 +157,4 @@ Verified project milestones and technical development notes.
 - [2026-11-17 14:48:30] refactor(features): remove zero-variance features from input matrix
 - [2026-11-18 10:14:22] docs(paper): draft methodology subsection on hybrid feature ranking
 - [2026-11-18 12:28:35] feat(eval): compute precision, recall, and F1 per packet protocol
+- [2026-11-18 14:48:30] chore(logs): standardize error logging formats during batch evaluation
